@@ -1,12 +1,6 @@
-// ============================================
-// RESTAURANTE EL CISNE — script compartido
-// Se incluye igual en las 3 páginas; cada bloque
-// revisa si sus elementos existen antes de actuar.
-// ============================================
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // ---- menú móvil (hamburguesa) ----
   const toggle = document.querySelector('.nav-toggle');
   const links = document.querySelector('.nav-links');
 
@@ -16,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
       toggle.setAttribute('aria-expanded', String(isOpen));
     });
 
-    // cerrar el menú al elegir una opción (útil en móvil)
+
     links.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         links.classList.remove('open');
@@ -25,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ---- formulario de contacto ----
+
   const form = document.querySelector('#contact-form');
   const status = document.querySelector('#form-status');
 
@@ -43,15 +37,13 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Aquí no hay backend: mostramos confirmación y
-      // dejamos abierto un enlace directo a WhatsApp como alternativa.
       status.textContent = `¡Gracias, ${name}! Te contactaremos pronto al ${phone}.`;
       status.style.color = '#33553A';
       form.reset();
     });
   }
 
-  // ---- enlace rápido a WhatsApp con mensaje precargado ----
+
   document.querySelectorAll('[data-whatsapp]').forEach(el => {
     const number = el.getAttribute('data-whatsapp');
     const text = encodeURIComponent('Hola, quiero hacer un pedido en Restaurante El Cisne 🦢');
