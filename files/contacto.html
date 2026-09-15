@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contáctanos · Restaurante El Cisne</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M24 6c-8 0-14 6-14 14 0 6 3 10 6 12-4 1-7 3-9 6h30c-2-3-5-5-9-6 3-2 6-6 6-12 0-8-6-14-10-14z" fill="#F3E6C9"/>
+        <circle cx="27" cy="14" r="1.6" fill="#2B1810"/>
+        <path d="M38 14c2 1 3 3 2 5-2-1-4-1-5 0 1-2 1-4 3-5z" fill="#C9962C"/>
+      </svg>
+      <span class="brand-text">
+        <span class="brand-name">El Cisne</span>
+        <span class="brand-tag">¡BUEN SABOR, SIEMPRE!</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="menu.html">Menú</a></li>
+      <li><a href="contacto.html" aria-current="page">Contáctanos</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero" style="padding-bottom: 0;">
+  <div class="wrap" style="grid-template-columns: 1fr; padding-bottom: 40px;">
+    <div>
+      <p class="hero-eyebrow">Escríbenos</p>
+      <h1>Hablemos de tu próximo almuerzo</h1>
+      <p class="lead">Por WhatsApp respondemos más rápido, pero también puedes dejarnos tu mensaje aquí.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="contact-grid">
+
+      <div>
+        <div class="contact-card">
+          <h3>WhatsApp</h3>
+          <div class="contact-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.5 8.5 0 01-12.4 7.5L3 20l1.1-5.4A8.5 8.5 0 1121 11.5z"/></svg>
+            <a data-whatsapp="573204198609" href="#" target="_blank" rel="noopener">320 419 8609</a>
+          </div>
+          <div class="contact-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.5 8.5 0 01-12.4 7.5L3 20l1.1-5.4A8.5 8.5 0 1121 11.5z"/></svg>
+            <a data-whatsapp="573204065469" href="#" target="_blank" rel="noopener">320 406 5469</a>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <h3>Domicilios</h3>
+          <div class="contact-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a4 4 0 018 0v2"/></svg>
+            <p style="margin:0;">Domicilio gratis dentro de la zona de cobertura del barrio.</p>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <h3>Cómo llegar</h3>
+          <div class="map-placeholder">
+            Mapa del barrio — pin de Restaurante El Cisne
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <h3>Escríbenos un mensaje</h3>
+        <form id="contact-form" novalidate>
+          <div class="form-field">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre">
+          </div>
+          <div class="form-field">
+            <label for="phone">Teléfono</label>
+            <input type="tel" id="phone" name="phone" placeholder="320 000 0000">
+          </div>
+          <div class="form-field">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" placeholder="Cuéntanos qué se te antoja hoy..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+          <p id="form-status" class="form-status" role="status"></p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>Restaurante El Cisne</h4>
+        <p>¡Buen sabor, siempre! Comida casera con principio, proteína y sazón de barrio.</p>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="menu.html">Menú</a></li>
+          <li><a href="contacto.html">Contáctanos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Pedidos</h4>
+        <ul>
+          <li><a data-whatsapp="573204198609" href="#" target="_blank" rel="noopener">WhatsApp 320 419 8609</a></li>
+          <li><a data-whatsapp="573204065469" href="#" target="_blank" rel="noopener">WhatsApp 320 406 5469</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-bottom">© 2026 Restaurante El Cisne. Todos los platos van con sopa y limonada.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
